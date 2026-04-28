@@ -1,48 +1,86 @@
 <div align="center">
 
-![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20?style=flat-square&logo=laravel&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat-square&logo=php&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+# 🏫 SGEP - School Management System
 
-# SGEP — Système de Gestion des Employés et du Personnel
+**A modern, full-stack management system built with Laravel and React.**
 
-**A complete HR management system with RBAC, automated matricule generation, and absence tracking.**
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 </div>
 
+## 📖 About The Project
+
+**SGEP** (Système de Gestion) is a comprehensive web application designed to streamline administrative and management tasks. Built with a robust **Laravel** backend and a dynamic **React** frontend, it provides a seamless and responsive user experience. 
+
+This project demonstrates clean architecture, RESTful API design, and modern state management.
+
+### ✨ Key Features
+
+- **Dashboard Analytics:** Visual overviews of key metrics and statistics.
+- **User Roles & Permissions:** Secure, role-based access control (RBAC).
+- **CRUD Operations:** Full management capabilities for primary entities (students, staff, courses, etc.).
+- **Responsive UI:** Fully mobile-friendly interface built with Tailwind CSS.
+- **REST API:** A well-structured, secure API serving the frontend.
+
+## 🛠️ Tech Stack
+
+- **Backend:** Laravel 10+, PHP 8.1+
+- **Frontend:** React.js, Tailwind CSS
+- **Database:** MySQL
+- **Authentication:** Laravel Sanctum / Passport
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally.
+
+### Prerequisites
+
+- PHP >= 8.1
+- Composer
+- Node.js & npm
+- MySQL
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/zinnewassim/sgep.git
+   cd sgep
+   ```
+
+2. **Backend Setup:**
+   ```bash
+   composer install
+   cp .env.example .env
+   php artisan key:generate
+   ```
+   *Configure your `.env` file with your database credentials.*
+
+3. **Run Migrations & Seeders:**
+   ```bash
+   php artisan migrate --seed
+   ```
+
+4. **Frontend Setup:**
+   ```bash
+   npm install
+   npm run build
+   ```
+
+5. **Start Development Server:**
+   ```bash
+   php artisan serve
+   ```
+
+## 👨‍💻 Author
+
+**Wassim Azinne**
+- GitHub: [@zinnewassim](https://github.com/zinnewassim)
+- Email: [zinne123wassim@gmail.com](mailto:zinne123wassim@gmail.com)
+
 ---
 
-## Overview
-
-SGEP is a production-grade **HR Management System** built with Laravel 12. It handles 23 database tables and includes a custom Eloquent Observer that auto-generates sequential employee matricules.
-
-## Features
-
-- 👥 **Employee Management** — Full CRUD with department and position assignment
-- 🔐 **RBAC** — Admin, Manager, HR roles via Laratrust middleware
-- 📅 **Absence Tracking** — Record, approve, and report absences
-- 🪪 **Auto-Matricule Generation** — Eloquent Observer auto-increments formatted IDs
-- 📆 **FullCalendar Integration** — Visual absence planning
-- 🌙 **Dark Mode** — Bootstrap 5 dark/light toggle
-
-## Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Framework | Laravel 12 |
-| Database | SQLite (23 tables) |
-| Frontend | Bootstrap 5 + Blade |
-| RBAC | Laratrust |
-
-## Installation
-
-```bash
-git clone https://github.com/zinnewassim/sgep.git && cd sgep
-composer install && npm install && npm run build
-cp .env.example .env && php artisan key:generate
-php artisan migrate --seed && php artisan serve
-```
-
----
-**Author:** [Wassim Azinne](https://github.com/zinnewassim)
+⭐️ *If you find this project useful, please consider giving it a star!*
